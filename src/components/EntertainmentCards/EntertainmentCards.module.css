@@ -1,0 +1,112 @@
+.entertainmentWebsite {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.entertainmentCard {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  position: relative;
+  max-width: 400px; /* Limit card width */
+}
+
+.active {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.cardIcon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.entertainmentCard h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.entertainmentCard p {
+  margin-bottom: 20px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.cardButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.cardButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardButton:hover {
+  transform: scale(1.05);
+}
+
+.downloadButton {
+  background-color: #6b5b95; /* Different color for download button */
+}
+
+.websiteButton {
+  background-color: #45B7D1; /* Different color for website button */
+}
+
+.buttonIcon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+
+  .entertainmentCard {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .cardButtons {
+    flex-direction: column;
+  }
+
+  .cardButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

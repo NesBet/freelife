@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# FREELIFE  
+Freelife is a web app that allows users to access applications or websites that they can use to:
+    - Stream live sports
+    - Stream movies, series and TV shows
+    - Stream and download music  
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
